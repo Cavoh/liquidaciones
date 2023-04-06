@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Liquidacion De Prestaciones Sociales</title>
+    <script src="script.js"></script>    
+    
+</head>
+
+<body>
+    <h1>Liquidacion De Prestaciones Sociales COLOMBIA</h1>
+
+<form>  
+  
+  <label>Fecha de Ingreso:</label>
+  <input type="text" placeholder="Introduzca aquí" id="fechaIngreso">
+
+  <label>Fecha de Retiro:</label>
+  <input type="text" placeholder="Introduzca aquí" id="fechaRetiro">  
+
+   <label>Salario:</label>
+  <input type="text" placeholder="Introduzca aquí" id="salario" oninput="verificarSalario()">
+  
+  <label>Aux. Transporte:</label>
+  <input type="text" placeholder="Introduzca aquí" id="auxTrans" value="140606"style="display:none;"readonly>
+    
+  <button type="button" onclick="calcular()">Calcular</button>
+  
+
+  <div class="form-group">
+    <label for="Indemnizacion">Indemnización:</label>
+    <input type="text" id="Indemnizacion" readonly>
+    <input type="checkbox" id="idcheckbox">    
+  </div>
+  
+  <label>Cesantias:</label>
+  <input type="text"id="cesantias"readonly>  
+
+  <label>Prima De Servicios:</label>
+  <input type="text" id="primaDeServicios"readonly>  
+
+  <label>Vacaciones:</label>
+  <input type="text" id="vacaciones"readonly> 
+
+  <label>Intereses De Cesantias:</label>
+  <input type="text"  id="interesesDeCesantias"readonly>  
+
+  <label for="total" class="total-text">Total Liquidación:</label>
+  <input type="text" id="total" readonly> 
+
+</form>
+</body>
+</html>
