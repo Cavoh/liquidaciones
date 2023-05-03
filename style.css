@@ -12,6 +12,15 @@ h1 {
   font-size: 25px;
 }
 
+h2 {
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
 form {
   width: 450px;
   margin: 0 auto;
