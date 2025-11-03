@@ -1,7 +1,7 @@
 function verificarSalario() {
   var salario = parseFloat(document.getElementById("salario").value);
   var auxTrans = document.getElementById("auxTrans");
-  if (salario < 2320000) {
+  if (salario < 2847000) {
     auxTrans.style.display = "block";
   } else {
     auxTrans.style.display = "none";
@@ -116,3 +116,4 @@ totalElement.value = "$" + sumarValores().toLocaleString("es-ES", { maximumFract
 totalElement.style.color = "red";
 
 }
+
